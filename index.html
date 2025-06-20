@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Cristiano Franca">
-  <meta name="robots" content="index, follow">
-  <meta name="keywords" content="donate, cash, card, banck, deposit, tranfer">
-  <meta name="Web site to donate!">
-  <link rel="shortcut icon" href="/assets/donation.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <title>DEV Cristiano Franca - Donate</title>
-</head>
-<body>
-  <h1>Apoie Meu Trabalho - DEV</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cristiano Franca" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="donate, cash, card, banck, deposit, tranfer"
+    />
+    <meta name="Web site to donate!" />
+    <link rel="shortcut icon" href="/assets/donation.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DEV Cristiano Franca - Donate</title>
+  </head>
+  <body>
+    <h1>Support My Work - DEV</h1>
 
     <div class="box">
-        <p>Se você gosta do que eu faço e quer ajudar a manter o projeto vivo, considere fazer uma doação. Qualquer valor é bem-vindo 🙏</p>
+      <p>
+        If you like what I do and want to help keep the project alive, please
+        consider making a donation. Any amount is welcome. 🙏
+      </p>
 
-        <div class="pix">
-            <h2>Doação via Pix</h2>
-            <p>Use a chave Pix abaixo ou escaneie o QR Code:</p>
-            <p class="key">sua-chave-pix@exemplo.com</p>
-            <img src="qr-code-pix.png" alt="QR Code Pix" class="qr-code">
-        </div>
-
-        <div class="paypal">
-            <h2>Doação via PayPal</h2>
-            <p>Clique no botão abaixo para doar com PayPal:</p>
-            <form action="https://www.paypal.com/donate" method="post" target="_blank">
-                <input type="hidden" name="hosted_button_id" value="A9PZ7ZGDWLFJU">
-                <button type="submit" class="paypal-button">Doar com PayPal</button>
-            </form>
-        </div>
-
-        <div class="transferencia">
-          <h2>Transferência Bancária</h2>
-          <p>Escolha uma das contas abaixo para doar:</p>
-      
-          <div class="slider-container">
-              <div class="slider">
-                  <!-- Contas duplicadas para efeito contínuo -->
-                  <div class="conta">
-                      <h3 class="barclays">
-                        <img src="https://www.barclays.co.uk/content/dam/icons/favicons/barclays/Eagle_RGB_Cyan_Large.svg" alt="Logo" class="logo">
-                        BARCLAYS
-                      </h3>
-                      
-                      <p>Conta: 20-65-20 / 33991245</p>
-                      <p>Nome: Cristiano Ferro de Franca</p>
-                  </div>
-                  <div class="conta">
-                      <h3 class="lloyds">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Lloyds_bank_logo_2024.jpg/250px-Lloyds_bank_logo_2024.jpg" alt="Logo" class="logo">
-                        Lloyds
-                      </h3>
-                      
-                      <p>Conta:30-96-35 / 48699960</p>
-                      <p>Nome: Cristiano Ferro de Franca</p>
-                  </div>
-              </div>
-          </div>
+      <div class="paypal">
+        <h2>Donation via PayPal</h2>
+        <p>Click the button below to donate with PayPal:</p>
+        <form
+          action="https://www.paypal.com/donate"
+          method="post"
+          target="_blank"
+        >
+          <input type="hidden" name="hosted_button_id" value="A9PZ7ZGDWLFJU" />
+          <button type="submit" class="paypal-button">Doar com PayPal</button>
+        </form>
       </div>
-      
-      
+
+      <div class="transferencia">
+        <h2>Bank Transfer</h2>
+        <p>Choose one of the accounts below to donate to:</p>
+
+        <div class="slider-container">
+          <div class="slider">
+            <!-- Barclays -->
+            <div class="conta">
+              <h3 class="barclays">
+                <img src="/doacoes/assets/Barclays.png" alt="Logo" class="logo" />
+              </h3>
+              <p>Account: 20-65-20 / 33991245</p>
+              <p>Name: Cristiano Ferro de Franca</p>
+            </div>
+
+            <!-- Lloyds -->
+            <div class="conta">
+              <h3 class="lloyds">
+                <img src="/doacoes/assets/Lloyds.png" alt="Logo" class="logo" />
+              </h3>
+              <p>Account: 30-96-35 / 48699960</p>
+              <p>Name: Cristiano Ferro de Franca</p>
+            </div>
+
+            <!-- Cópia Barclays -->
+            <div class="conta duplicate">
+              <h3 class="barclays">
+                <img src="/doacoes/assets/Barclays.png" alt="Logo" class="logo" />
+              </h3>
+              <p>Account: 20-65-20 / 33991245</p>
+              <p>Name: Cristiano Ferro de Franca</p>
+            </div>
+
+            <!-- Cópia Lloyds -->
+            <div class="conta duplicate">
+              <h3 class="lloyds">
+                <img src="/doacoes/assets/Lloyds.png" alt="Logo" class="logo" />
+              </h3>
+              <p>Account: 30-96-35 / 48699960</p>
+              <p>Name: Cristiano Ferro de Franca</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <footer>
-        Obrigado pelo seu apoio! 💙
-    </footer>
-</body>
+    <footer>Thank you for your support! 💙</footer>
+  </body>
 </html>
