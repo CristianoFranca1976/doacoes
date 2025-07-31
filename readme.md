@@ -32,3 +32,7 @@ value="A9PZ7ZGDWLFJU"
 ```
 
 - ACIMA E O CODIGO OBTIDO PRA RECEBER DONATIVOS;
+
+![alt text](<Screenshot 2025-07-31 222030.png>)
+
+[Link: Donate](https://donates.vercel.app/)
