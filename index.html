@@ -1,87 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Cristiano Franca" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="keywords"
-      content="donate, cash, card, banck, deposit, tranfer"
-    />
-    <meta name="Web site to donate!" />
-    <link rel="shortcut icon" href="/assets/donation.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <title>DEV Cristiano Franca - Donate</title>
-  </head>
-  <body>
-    <h1>Support My Work - DEV</h1>
-
-    <div class="box">
-      <p>
-        If you like what I do and want to help keep the project alive, please
-        consider making a donation. Any amount is welcome. 🙏
-      </p>
-
-      <div class="paypal">
-        <h2>Donation via PayPal</h2>
-        <p>Click the button below to donate with PayPal:</p>
-        <form
-          action="https://www.paypal.com/donate"
-          method="post"
-          target="_blank"
-        >
-          <input type="hidden" name="hosted_button_id" value="A9PZ7ZGDWLFJU" />
-          <button type="submit" class="paypal-button">Doar com PayPal</button>
-        </form>
-      </div>
-
-      <div class="transferencia">
-        <h2>Bank Transfer</h2>
-        <p>Choose one of the accounts below to donate to:</p>
-
-        <div class="slider-container">
-          <div class="slider">
-            <!-- Barclays -->
-            <div class="conta">
-              <h3 class="barclays">
-                <img src="assets/Barclays.png" alt="Logo" class="logo" />
-              </h3>
-              <p>Account: 20-65-20 / 33991245</p>
-              <p>Name: Cristiano Ferro de Franca</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support the work of developer Cristiano Franca with a voluntary donation via PayPal or UK bank transfer.">
+  <meta name="author" content="Cristiano Franca">
+  <link rel="icon" href="assets/donation.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <title>Support my work · Cristiano Franca</title>
+</head>
+<body>
+  <div class="page">
+    <header><a class="brand" href="./" aria-label="Cristiano Franca home"><span class="brand-icon" aria-hidden="true">cf.</span><span>Cristiano Franca<span class="brand-sub">Developer & creator</span></span></a><a class="header-link" href="#ways">Support my work <span aria-hidden="true">↗</span></a></header>
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <span class="eyebrow"><span></span> A LITTLE SUPPORT. A BIG DIFFERENCE.</span>
+        <h1 id="title">Help good ideas<br>become <em>real things.</em></h1>
+        <p>If you enjoy what I build, you can help me keep creating.<br class="desktop-break"> Every contribution means more time for the next idea.</p>
+        <div class="signature"><span class="avatar" aria-hidden="true">CF</span><span>Independent work. Made with care.<small>Thank you for being part of it.</small></span></div>
+        <div class="orbit" aria-hidden="true"><span class="code">&lt;/&gt;</span><span class="spark s1">✦</span><span class="spark s2">✦</span><span class="orbit-label">Built with passion.</span></div>
+      </section>
+      <section id="ways" class="ways" aria-labelledby="ways-title">
+        <div class="section-heading"><h2 id="ways-title">Choose how to give</h2><span>Any amount is welcome</span></div>
+        <div class="methods">
+          <article class="paypal card">
+            <div class="card-top"><span class="payment-icon" aria-hidden="true">P</span><span class="badge">QUICK & EASY</span></div>
+            <h3>A little boost via PayPal</h3>
+            <p>A simple way to support the next project.<br>Choose your donation amount on PayPal.</p>
+            <form action="https://www.paypal.com/donate" method="post" target="_blank" rel="noopener noreferrer">
+              <input type="hidden" name="hosted_button_id" value="A9PZ7ZGDWLFJU">
+              <button class="donate" type="submit">Donate with PayPal <span aria-hidden="true">↗</span></button>
+            </form>
+            <span class="payment-note">Continue to PayPal in a new tab</span>
+          </article>
+          <article class="bank card">
+            <div class="bank-heading"><span class="bank-symbol" aria-hidden="true">▤</span><div><h3>Prefer a bank transfer?</h3><p>Send your support directly to a UK account.</p></div></div>
+            <div class="accounts">
+              <section class="account" aria-label="Barclays account"><div class="bank-name"><img src="assets/Barclays.png" alt="Barclays"><span>UK · GBP</span></div><dl><div><dt>Sort code</dt><dd>20-65-20</dd></div><div><dt>Account number</dt><dd>33991245</dd></div></dl><div class="holder"><span>Account holder</span><strong>Cristiano Ferro de Franca</strong></div></section>
+              <section class="account" aria-label="Lloyds account"><div class="bank-name"><img src="assets/Lloyds.png" alt="Lloyds"><span>UK · GBP</span></div><dl><div><dt>Sort code</dt><dd>30-96-35</dd></div><div><dt>Account number</dt><dd>48699960</dd></div></dl><div class="holder"><span>Account holder</span><strong>Cristiano Ferro de Franca</strong></div></section>
             </div>
-
-            <!-- Lloyds -->
-            <div class="conta">
-              <h3 class="lloyds">
-                <img src="assets/Lloyds.png" alt="Logo" class="logo" />
-              </h3>
-              <p>Account: 30-96-35 / 48699960</p>
-              <p>Name: Cristiano Ferro de Franca</p>
-            </div>
-
-            <!-- Cópia Barclays -->
-            <div class="conta duplicate">
-              <h3 class="barclays">
-                <img src="assets/Barclays.png" alt="Logo" class="logo" />
-              </h3>
-              <p>Account: 20-65-20 / 33991245</p>
-              <p>Name: Cristiano Ferro de Franca</p>
-            </div>
-
-            <!-- Cópia Lloyds -->
-            <div class="conta duplicate">
-              <h3 class="lloyds">
-                <img src="assets/Lloyds.png" alt="Logo" class="logo" />
-              </h3>
-              <p>Account: 30-96-35 / 48699960</p>
-              <p>Name: Cristiano Ferro de Franca</p>
-            </div>
-          </div>
+          </article>
         </div>
-      </div>
-    </div>
-
-    <footer>Thank you for your support! 💙</footer>
-  </body>
+      </section>
+      <div class="thank-you"><span aria-hidden="true">♡</span><p>Big or small, your support makes a difference.<strong>Thank you for helping me keep building.</strong></p></div>
+    </main>
+    <footer><span>© Cristiano Franca</span><span>Made with care. Supported by you.</span><a href="#title">Back to top ↑</a></footer>
+  </div>
+</body>
 </html>

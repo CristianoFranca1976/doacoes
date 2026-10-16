@@ -1,0 +1,17 @@
+SITE DE DOAÇÕES — VERSÃO MODERNIZADA
+
+Abra index.html no navegador para visualizar. Para publicar, envie index.html,
+style.css e a pasta assets juntos, mantendo a estrutura de arquivos.
+
+Foram preservados o formulário original do PayPal e os dados das duas contas.
+O conteúdo continua em inglês, como no site original.
+
+Melhorias: novo visual, cartões bancários fixos, layout adaptável, tamanhos de
+texto legíveis, navegação por teclado e respeito à preferência de movimento reduzido.
+Não há bibliotecas ou fontes externas necessárias.
+
+Verificação automática: arquivos referenciados, âncoras, configuração do formulário
+PayPal, dados bancários e presença das regras responsivas passaram.
+A prévia no navegador do ambiente não conseguiu acessar o servidor local;
+a conferência visual em computador e celular continua pendente.
+Nenhum pagamento foi realizado. A pasta original D:\doacoes não foi alterada.
