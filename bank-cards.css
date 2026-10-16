@@ -1,0 +1,91 @@
+/* Bank transfer details styled as cards; chip and contactless mark are decorative. */
+.account {
+  --card-light: #e1f5ff;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 216px;
+  padding: 18px;
+  border: 1px solid #ffffff50;
+  border-radius: 17px;
+  color: #fff;
+  background: linear-gradient(125deg, #113b59, #17647d 65%, #258199);
+  box-shadow: 0 8px 18px #173c4c20, inset 0 1px 0 #ffffff30;
+  animation: card-arrive .7s cubic-bezier(.2,.7,.2,1) both;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.account-lloyds {
+  --card-light: #e2f3df;
+  background: linear-gradient(125deg, #163f32, #276747 65%, #49805c);
+  animation-delay: .12s;
+}
+.account::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 240px;
+  height: 240px;
+  border: 1px solid #ffffff18;
+  border-radius: 50%;
+  right: -125px;
+  top: -90px;
+  box-shadow: 0 0 0 24px #ffffff06, 0 0 0 48px #ffffff06;
+}
+.account::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 20%, #ffffff14 44%, transparent 67%);
+  transform: translateX(-125%);
+  animation: card-sheen 1.5s ease .5s both;
+}
+.account-lloyds::after { animation-delay: .7s; }
+.account .bank-name { height: 28px; }
+.account .bank-name img {
+  width: 84px;
+  height: 28px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 5px;
+  padding: 3px 6px;
+}
+.account .bank-name > span { color: var(--card-light); font-size: 9px; }
+.card-hardware { display: flex; align-items: center; gap: 10px; margin: 19px 0 2px; }
+.card-chip {
+  position: relative;
+  width: 31px;
+  height: 24px;
+  border: 1px solid #b99c59;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #ba9c59, #f3dfaa 50%, #c5a96a);
+  box-shadow: inset 0 1px 2px #fff7;
+}
+.card-chip::before { content: ""; position: absolute; inset: 6px -1px; border-block: 1px solid #91783d; }
+.card-chip::after { content: ""; position: absolute; inset: -1px 9px; border-inline: 1px solid #91783d; border-radius: 4px; }
+.contactless { width: 20px; height: 23px; color: var(--card-light); opacity: .8; }
+.account dl { display: grid; grid-template-columns: .9fr 1.1fr; gap: 8px; margin: 13px 0 17px; }
+.account dl > div { display: block; margin: 0; }
+.account dt, .account .holder > span { color: var(--card-light); font-size: 9px; }
+.account dd { margin-top: 7px; font-family: "Courier New", monospace; font-size: 14px; font-weight: 600; letter-spacing: 1px; white-space: nowrap; }
+.account .holder { margin-top: auto; border-color: #ffffff26; padding-top: 12px; }
+.account .holder strong { display: block; font-size: 10px; line-height: 1.5; letter-spacing: .5px; text-transform: uppercase; }
+@keyframes card-arrive { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes card-sheen { to { transform: translateX(125%); } }
+@media (hover: hover) and (pointer: fine) {
+  .account:hover { transform: translateY(-5px) rotate(-1deg); box-shadow: 0 15px 25px #173c4c30, inset 0 1px 0 #ffffff40; }
+  .account-lloyds:hover { transform: translateY(-5px) rotate(1deg); }
+}
+@media (max-width: 640px) {
+  .account { min-height: 220px; padding: 21px; }
+  .account dd { font-size: 17px; }
+  .account dt, .account .holder > span { font-size: 10px; }
+  .account .holder strong { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .account, .account::after { animation: none; transition: none; }
+  .account::after { display: none; }
+  .account:hover, .account-lloyds:hover { transform: none; }
+}
